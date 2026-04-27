@@ -4,7 +4,6 @@ import './index.css'
 import Greeting from './Greeting.jsx'
 import TodoList from './JsInJSX.jsx'
 
-import GreetingImage from './GreetingImage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
