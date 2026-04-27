@@ -13,11 +13,5 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Greeting/>
-    <TodoList/>
-    <Bio></Bio>
-    <TestJSX></TestJSX>
-    <GreetingImage/>
-    <Button1></Button1>
-    <Button2></Button2>
   </StrictMode>,
 )
