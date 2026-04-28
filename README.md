@@ -1,16 +1,20 @@
-# React + Vite
+# odin-FirstReact-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a testing repository created while coding along with **The Odin Project** curriculum, specifically the first React lessons.
 
-Currently, two official plugins are available:
+It is meant for learning and experimenting with basic React concepts as part of the course.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Purpose
 
-## React Compiler
+- Practice React fundamentals
+- Follow along with The Odin Project exercises
+- Test small components and ideas during learning
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Note
 
-## Expanding the ESLint configuration
+This is not a production project. It is purely for educational purposes and experimentation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+Course reference: https://www.theodinproject.com/
+Repository: https://github.com/WujecDamian/odin-FirstReact-app
