@@ -1,16 +1,19 @@
 import { Component } from "react";
-
+import Count from "./Count.jsx";
+import ListElement from "./ListElement.jsx";
 class ClassInput extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       todos: ["Just some demo tasks", "As an example"],
+      count: 0,
       inputVal: "",
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   handleInputChange(e) {
@@ -20,14 +23,28 @@ class ClassInput extends Component {
     }));
   }
 
+  handleDelete(todoToDelete) {
+    this.setState((state) => ({
+      ...state,
+      todos: state.todos.filter((todo) => todo !== todoToDelete),
+      count: state.todos.length - 1,
+    }));
+  }
   handleSubmit(e) {
     e.preventDefault();
     this.setState((state) => ({
       todos: state.todos.concat(state.inputVal),
+      count: state.todos.length + 1,
       inputVal: "",
     }));
   }
 
+  componentDidMount() {
+    this.setState((state) => ({
+      ...state,
+      count: state.todos.length,
+    }));
+  }
   render() {
     return (
       <section>
@@ -44,11 +61,17 @@ class ClassInput extends Component {
           />
           <button type="submit">Submit</button>
         </form>
-        <h4>All the tasks!</h4>
+        <h4>
+          All the tasks! - Task count <Count count={this.state.count}></Count>
+        </h4>
         {/* The list of all the To-Do's, displayed */}
         <ul>
           {this.state.todos.map((todo) => (
-            <li key={todo}>{todo}</li>
+            <ListElement
+              todo={todo}
+              handleDelete={this.handleDelete}
+              key={todo}
+            />
           ))}
         </ul>
       </section>
