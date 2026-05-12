@@ -1,7 +1,7 @@
 import "./App.css";
 import "./Style.css";
-import FunctionalInput from "./components/FunctionalInput";
-import ClassInput from "./components/ClassInput";
+import FunctionalInput from "./components/Class-based-components/FunctionalInput.jsx";
+import ClassInput from "./components/Class-based-components/ClassInput.jsx";
 function App() {
   return (
     <>
