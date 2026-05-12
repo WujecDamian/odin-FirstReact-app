@@ -55,12 +55,13 @@ ul {
 li {
   width: 100%;
   font-family: "Merriweather", serif;
+  margin: 1rem;
 }
 
 button {
   margin-left: 1rem;
   padding: 0.35rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.67);
   color: #111;
   border: none;
   border-radius: 0.25rem;
