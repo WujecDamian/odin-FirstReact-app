@@ -1,15 +1,6 @@
-
-import './App.css'
+import "./App.css";
 function App() {
-
-
-  return (
-    <>
-      <article id="center">
-     <h1>Hello world!</h1>
-      </article>
-    </>
-  )
+  return <></>;
 }
 
-export default App
+export default App;
