@@ -1,5 +1,7 @@
 import "./App.css";
 import "./Style.css";
+import FunctionalInput from "./components/FunctionalInput";
+import ClassInput from "./components/ClassInput";
 function App() {
   return (
     <>
